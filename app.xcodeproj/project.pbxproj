@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					D1EF20331E53E090000D30B4 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AXQN633PY8;
 						ProvisioningStyle = Automatic;
 					};
 					D1EF20471E53E091000D30B4 = {
@@ -412,6 +413,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-3";
+				DEVELOPMENT_TEAM = AXQN633PY8;
 				INFOPLIST_FILE = app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.semaphore.app;
@@ -424,6 +427,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-3";
+				DEVELOPMENT_TEAM = AXQN633PY8;
 				INFOPLIST_FILE = app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.semaphore.app;
@@ -505,6 +510,7 @@
 				D1EF205E1E53E091000D30B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1EF205F1E53E091000D30B4 /* Build configuration list for PBXNativeTarget "appTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +519,7 @@
 				D1EF20611E53E091000D30B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1EF20621E53E091000D30B4 /* Build configuration list for PBXNativeTarget "appUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +528,7 @@
 				D1EF20641E53E091000D30B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
