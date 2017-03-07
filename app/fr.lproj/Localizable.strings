@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Semaphore
+
+  Created by Samson on 2017-02-15.
+  Copyright © 2017 Samson. All rights reserved.
+*/
+
+main_current_header = "Dans %@ maintenant:";
+
+main_mailbox_picker_title = "Boîtes aux lettres";
+
+notification_title = "Nouveau articles";

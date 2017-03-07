@@ -10,6 +10,10 @@ target 'app' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
 
+  pod 'SQLite.swift'
+
+  pod 'BRYXBanner'
+
   target 'appTests' do
     inherit! :search_paths
     # Pods for testing

@@ -10,6 +10,24 @@
 		2FE67F72BAC99C6B96CA14B2 /* Pods_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AA650E37159183E6CE19A0 /* Pods_app.framework */; };
 		3995D5D6DA0D4E4C30DE04E8 /* Pods_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FF7DDE2209FD1922DD043D /* Pods_appTests.framework */; };
 		4900DA60672A449C9868F106 /* Pods_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B784A10A7A127D174D316AFD /* Pods_appUITests.framework */; };
+		D11AFFA11E549CA400868DED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11AFFA01E549CA400868DED /* User.swift */; };
+		D11AFFA31E54B46900868DED /* Delivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11AFFA21E54B46900868DED /* Delivery.swift */; };
+		D11AFFAF1E54C6E900868DED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D11AFFB11E54C6E900868DED /* Localizable.strings */; };
+		D11AFFBB1E54C99200868DED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D11AFFB71E54C99200868DED /* Localizable.strings */; };
+		D11AFFBC1E54C99200868DED /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = D11AFFB91E54C99200868DED /* Localizable.stringsdict */; };
+		D11AFFBF1E54C99A00868DED /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = D11AFFBD1E54C99A00868DED /* Localizable.stringsdict */; };
+		D145519C1E57559100820221 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D145519B1E57559100820221 /* LoginViewController.swift */; };
+		D145519E1E5766FD00820221 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D145519D1E5766FD00820221 /* UIColor.swift */; };
+		D19DE78D1E5B93EE00EF0AC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19DE78C1E5B93EE00EF0AC8 /* Constants.swift */; };
+		D1A247DB1E5A63FD00AAB90B /* Mailbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A247DA1E5A63FD00AAB90B /* Mailbox.swift */; };
+		D1A247DD1E5AA47500AAB90B /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A247DC1E5AA47500AAB90B /* TimeInterval.swift */; };
+		D1A247DF1E5AA77400AAB90B /* SemaphoreDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A247DE1E5AA77400AAB90B /* SemaphoreDatabase.swift */; };
+		D1D29BD41E68CCDE00940BF5 /* DeliveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D29BD21E68CCDE00940BF5 /* DeliveryTableViewCell.swift */; };
+		D1D29BD51E68CCDE00940BF5 /* DeliveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D29BD31E68CCDE00940BF5 /* DeliveryTableViewCell.xib */; };
+		D1DA7BED1E57DBEB00E25F6A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DA7BEC1E57DBEB00E25F6A /* SplashViewController.swift */; };
+		D1DA7BEF1E57E89B00E25F6A /* SemaphoreUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DA7BEE1E57E89B00E25F6A /* SemaphoreUserDefaults.swift */; };
+		D1E9740A1E6A412400A0CD23 /* DeliveryTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E974091E6A412400A0CD23 /* DeliveryTransformer.swift */; };
+		D1E9740C1E6A414C00A0CD23 /* MailboxStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E9740B1E6A414C00A0CD23 /* MailboxStackView.swift */; };
 		D1EF20381E53E090000D30B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EF20371E53E090000D30B4 /* AppDelegate.swift */; };
 		D1EF203D1E53E090000D30B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EF203B1E53E090000D30B4 /* Main.storyboard */; };
 		D1EF203F1E53E090000D30B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EF203E1E53E090000D30B4 /* Assets.xcassets */; };
@@ -20,6 +38,8 @@
 		D1EF206E1E54279A000D30B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1EF206D1E54279A000D30B4 /* GoogleService-Info.plist */; };
 		D1EF206F1E54279A000D30B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1EF206D1E54279A000D30B4 /* GoogleService-Info.plist */; };
 		D1EF20701E54279A000D30B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1EF206D1E54279A000D30B4 /* GoogleService-Info.plist */; };
+		D1F529FD1E69D95E008F7C42 /* DeliveryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F529FC1E69D95E008F7C42 /* DeliveryViewModel.swift */; };
+		D1F52A041E69DEC9008F7C42 /* MailboxItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F52A031E69DEC9008F7C42 /* MailboxItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +68,27 @@
 		B784A10A7A127D174D316AFD /* Pods_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2A27245370384741F944B4 /* Pods-appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-appUITests/Pods-appUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CECA50FB7C5D44E3E6F75F03 /* Pods-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-app/Pods-app.release.xcconfig"; sourceTree = "<group>"; };
+		D11AFFA01E549CA400868DED /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D11AFFA21E54B46900868DED /* Delivery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delivery.swift; sourceTree = "<group>"; };
+		D11AFFAD1E54C68C00868DED /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		D11AFFAE1E54C68C00868DED /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D11AFFB01E54C6E900868DED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D11AFFB31E54C6F200868DED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		D11AFFB81E54C99200868DED /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D11AFFBA1E54C99200868DED /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = fr; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		D11AFFBE1E54C99A00868DED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		D145519B1E57559100820221 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D145519D1E5766FD00820221 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		D19DE78C1E5B93EE00EF0AC8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D1A247DA1E5A63FD00AAB90B /* Mailbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mailbox.swift; sourceTree = "<group>"; };
+		D1A247DC1E5AA47500AAB90B /* TimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		D1A247DE1E5AA77400AAB90B /* SemaphoreDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemaphoreDatabase.swift; sourceTree = "<group>"; };
+		D1D29BD21E68CCDE00940BF5 /* DeliveryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryTableViewCell.swift; sourceTree = "<group>"; };
+		D1D29BD31E68CCDE00940BF5 /* DeliveryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeliveryTableViewCell.xib; sourceTree = "<group>"; };
+		D1DA7BEC1E57DBEB00E25F6A /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		D1DA7BEE1E57E89B00E25F6A /* SemaphoreUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemaphoreUserDefaults.swift; sourceTree = "<group>"; };
+		D1E974091E6A412400A0CD23 /* DeliveryTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeliveryTransformer.swift; path = Transformers/DeliveryTransformer.swift; sourceTree = "<group>"; };
+		D1E9740B1E6A414C00A0CD23 /* MailboxStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MailboxStackView.swift; path = Views/MailboxStackView.swift; sourceTree = "<group>"; };
 		D1EF20341E53E090000D30B4 /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EF20371E53E090000D30B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1EF203C1E53E090000D30B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +103,8 @@
 		D1EF20591E53E091000D30B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1EF20671E54245C000D30B4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D1EF206D1E54279A000D30B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D1F529FC1E69D95E008F7C42 /* DeliveryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeliveryViewModel.swift; path = ViewModels/DeliveryViewModel.swift; sourceTree = "<group>"; };
+		D1F52A031E69DEC9008F7C42 /* MailboxItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MailboxItemView.swift; path = Views/MailboxItemView.swift; sourceTree = "<group>"; };
 		E5AA650E37159183E6CE19A0 /* Pods_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,6 +159,33 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D11AFFA91E54C0E300868DED /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				D1EF203B1E53E090000D30B4 /* Main.storyboard */,
+				D1EF20401E53E090000D30B4 /* LaunchScreen.storyboard */,
+			);
+			name = Base.lproj;
+			sourceTree = "<group>";
+		};
+		D11AFFAA1E54C0F100868DED /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				D11AFFB11E54C6E900868DED /* Localizable.strings */,
+				D11AFFBD1E54C99A00868DED /* Localizable.stringsdict */,
+			);
+			name = en.lproj;
+			sourceTree = "<group>";
+		};
+		D11AFFB41E54C84100868DED /* fr.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				D11AFFB71E54C99200868DED /* Localizable.strings */,
+				D11AFFB91E54C99200868DED /* Localizable.stringsdict */,
+			);
+			name = fr.lproj;
+			sourceTree = "<group>";
+		};
 		D1EF202B1E53E090000D30B4 = {
 			isa = PBXGroup;
 			children = (
@@ -141,13 +211,22 @@
 		D1EF20361E53E090000D30B4 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				D11AFFB41E54C84100868DED /* fr.lproj */,
+				D11AFFAA1E54C0F100868DED /* en.lproj */,
+				D11AFFA91E54C0E300868DED /* Base.lproj */,
 				D1EF20371E53E090000D30B4 /* AppDelegate.swift */,
-				D1EF203B1E53E090000D30B4 /* Main.storyboard */,
 				D1EF203E1E53E090000D30B4 /* Assets.xcassets */,
-				D1EF20401E53E090000D30B4 /* LaunchScreen.storyboard */,
 				D1EF20431E53E090000D30B4 /* Info.plist */,
-				D1EF20671E54245C000D30B4 /* MainViewController.swift */,
+				D1F52A051E69E2E9008F7C42 /* Transformers */,
+				D1F529F71E69D7B3008F7C42 /* ViewControllers */,
 				D1EF206D1E54279A000D30B4 /* GoogleService-Info.plist */,
+				D1F529FB1E69D81F008F7C42 /* ViewModels */,
+				D1F529F61E69D7A2008F7C42 /* Models */,
+				D1F529F81E69D7D3008F7C42 /* Extensions */,
+				D1F529F91E69D7E0008F7C42 /* Data */,
+				D19DE78C1E5B93EE00EF0AC8 /* Constants.swift */,
+				D1F52A001E69DDCE008F7C42 /* Views */,
+				D1F529FA1E69D7ED008F7C42 /* TableViewCells */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -168,6 +247,78 @@
 				D1EF20591E53E091000D30B4 /* Info.plist */,
 			);
 			path = appUITests;
+			sourceTree = "<group>";
+		};
+		D1F529F61E69D7A2008F7C42 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D11AFFA01E549CA400868DED /* User.swift */,
+				D11AFFA21E54B46900868DED /* Delivery.swift */,
+				D1A247DA1E5A63FD00AAB90B /* Mailbox.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D1F529F71E69D7B3008F7C42 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D1EF20671E54245C000D30B4 /* MainViewController.swift */,
+				D145519B1E57559100820221 /* LoginViewController.swift */,
+				D1DA7BEC1E57DBEB00E25F6A /* SplashViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D1F529F81E69D7D3008F7C42 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D145519D1E5766FD00820221 /* UIColor.swift */,
+				D1A247DC1E5AA47500AAB90B /* TimeInterval.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		D1F529F91E69D7E0008F7C42 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D1DA7BEE1E57E89B00E25F6A /* SemaphoreUserDefaults.swift */,
+				D1A247DE1E5AA77400AAB90B /* SemaphoreDatabase.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		D1F529FA1E69D7ED008F7C42 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D1D29BD21E68CCDE00940BF5 /* DeliveryTableViewCell.swift */,
+				D1D29BD31E68CCDE00940BF5 /* DeliveryTableViewCell.xib */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		D1F529FB1E69D81F008F7C42 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D1F529FC1E69D95E008F7C42 /* DeliveryViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		D1F52A001E69DDCE008F7C42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1E9740B1E6A414C00A0CD23 /* MailboxStackView.swift */,
+				D1F52A031E69DEC9008F7C42 /* MailboxItemView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D1F52A051E69E2E9008F7C42 /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				D1E974091E6A412400A0CD23 /* DeliveryTransformer.swift */,
+			);
+			name = Transformers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +400,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = AXQN633PY8;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					D1EF20471E53E091000D30B4 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -269,6 +425,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = D1EF202B1E53E090000D30B4;
 			productRefGroup = D1EF20351E53E090000D30B4 /* Products */;
@@ -287,10 +444,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D29BD51E68CCDE00940BF5 /* DeliveryTableViewCell.xib in Resources */,
+				D11AFFAF1E54C6E900868DED /* Localizable.strings in Resources */,
+				D11AFFBB1E54C99200868DED /* Localizable.strings in Resources */,
 				D1EF20421E53E090000D30B4 /* LaunchScreen.storyboard in Resources */,
 				D1EF206E1E54279A000D30B4 /* GoogleService-Info.plist in Resources */,
 				D1EF203F1E53E090000D30B4 /* Assets.xcassets in Resources */,
+				D11AFFBF1E54C99A00868DED /* Localizable.stringsdict in Resources */,
 				D1EF203D1E53E090000D30B4 /* Main.storyboard in Resources */,
+				D11AFFBC1E54C99200868DED /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,8 +617,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1F529FD1E69D95E008F7C42 /* DeliveryViewModel.swift in Sources */,
+				D1A247DF1E5AA77400AAB90B /* SemaphoreDatabase.swift in Sources */,
+				D1F52A041E69DEC9008F7C42 /* MailboxItemView.swift in Sources */,
+				D1E9740A1E6A412400A0CD23 /* DeliveryTransformer.swift in Sources */,
 				D1EF20681E54245C000D30B4 /* MainViewController.swift in Sources */,
+				D1A247DD1E5AA47500AAB90B /* TimeInterval.swift in Sources */,
+				D1DA7BEF1E57E89B00E25F6A /* SemaphoreUserDefaults.swift in Sources */,
+				D145519E1E5766FD00820221 /* UIColor.swift in Sources */,
+				D1D29BD41E68CCDE00940BF5 /* DeliveryTableViewCell.swift in Sources */,
+				D11AFFA31E54B46900868DED /* Delivery.swift in Sources */,
 				D1EF20381E53E090000D30B4 /* AppDelegate.swift in Sources */,
+				D145519C1E57559100820221 /* LoginViewController.swift in Sources */,
+				D1DA7BED1E57DBEB00E25F6A /* SplashViewController.swift in Sources */,
+				D1A247DB1E5A63FD00AAB90B /* Mailbox.swift in Sources */,
+				D11AFFA11E549CA400868DED /* User.swift in Sources */,
+				D1E9740C1E6A414C00A0CD23 /* MailboxStackView.swift in Sources */,
+				D19DE78D1E5B93EE00EF0AC8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,10 +669,44 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D11AFFB11E54C6E900868DED /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D11AFFB01E54C6E900868DED /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D11AFFB71E54C99200868DED /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D11AFFB81E54C99200868DED /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D11AFFB91E54C99200868DED /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D11AFFBA1E54C99200868DED /* fr */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
+		D11AFFBD1E54C99A00868DED /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D11AFFBE1E54C99A00868DED /* en */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
 		D1EF203B1E53E090000D30B4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D1EF203C1E53E090000D30B4 /* Base */,
+				D11AFFAD1E54C68C00868DED /* fr */,
+				D11AFFB31E54C6F200868DED /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -504,6 +715,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D1EF20411E53E090000D30B4 /* Base */,
+				D11AFFAE1E54C68C00868DED /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -515,6 +727,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -551,7 +764,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -565,6 +778,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -595,7 +809,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -609,13 +823,14 @@
 			baseConfigurationReference = B1F46567977C0CA51A909A27 /* Pods-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-3";
 				DEVELOPMENT_TEAM = AXQN633PY8;
 				INFOPLIST_FILE = app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.semaphore.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -624,13 +839,14 @@
 			baseConfigurationReference = CECA50FB7C5D44E3E6F75F03 /* Pods-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-3";
 				DEVELOPMENT_TEAM = AXQN633PY8;
 				INFOPLIST_FILE = app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.semaphore.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

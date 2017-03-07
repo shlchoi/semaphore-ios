@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Semaphore
+
+  Created by Samson on 2017-02-15.
+  Copyright © 2017 Samson. All rights reserved.
+*/
+
+main_current_header = "Currently in %@:";
+
+main_mailbox_picker_title = "Mailboxes";
+
+notification_title = "New mail received";
+
+notification_categorising = "You have new items in %@";

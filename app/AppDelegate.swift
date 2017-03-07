@@ -8,42 +8,103 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
     
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FIRApp.configure();
+
+        application.setMinimumBackgroundFetchInterval(UIApplicationBackgroundFetchIntervalMinimum)
+        UserDefaults.standard.setValue(false, forKey:"_UIConstraintBasedLayoutLogUnsatisfiable")
+        SemaphoreDatabase.create()
+
+        if #available(iOS 10.0, *) {
+            // request or register for user notifications
+            // todo: save if user agreed/disagreed
+            let center = UNUserNotificationCenter.current()
+            center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+                if granted {
+                    NSLog("Request authorization succeeded!")
+                }
+            }
+        } else {
+            application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil))
+        }
         return true
     }
 
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    func application(_ application: UIApplication,
+                     performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+
+        let auth = FIRAuth.auth()!
+
+        if auth.currentUser == nil {
+            return completionHandler(.noData)
+        }
+
+        let databaseRef = FIRDatabase.database().reference()
+        let mailboxes = SemaphoreUserDefaults.getMailboxList()
+        if mailboxes.count == 0 {
+            return completionHandler(.noData)
+        }
+
+        var complete = [String]()
+
+        mailboxes.forEach( { (mailboxId) -> Void in
+            let lastTime = SemaphoreUserDefaults.getLastDeliveryTime(mailboxId)
+            databaseRef.child("deliveries")
+                .child(mailboxId)
+                .queryLimited(toLast: 1)
+                .observeSingleEvent(of: .childAdded, with: { (snapshot) -> Void in
+                    if let deliveryDictionary = snapshot.value as? NSDictionary {
+                        let delivery = Delivery(deliveryDictionary)
+                        if (delivery.timestamp > lastTime) {
+                            var message = String()
+                            if (delivery.categorising) {
+                                message = String.localizedStringWithFormat(NSLocalizedString("notification_categorising", comment: ""), SemaphoreUserDefaults.getMailboxName(mailboxId)!)
+                            } else if (delivery.total == 0) {
+                                return
+                            } else {
+                                message = String.localizedStringWithFormat(NSLocalizedString("notification_text",comment: ""), delivery.total, SemaphoreUserDefaults.getMailboxName(mailboxId)!)
+                            }
+                            let title = NSLocalizedString("notification_title", comment: "")
+
+                            if #available(iOS 10.0, *) {
+                                let content = UNMutableNotificationContent()
+                                content.title = title
+                                content.body = message
+                                content.badge = 1
+                                content.sound = UNNotificationSound.default()
+
+                                let request = UNNotificationRequest(identifier: mailboxId, content: content, trigger: nil)
+                            
+                                UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+                                UNUserNotificationCenter.current().add(request)
+                            } else {
+                                let localNotification = UILocalNotification()
+                                localNotification.alertTitle = title
+                                localNotification.alertBody = message
+
+                                UIApplication.shared.scheduleLocalNotification(localNotification)
+                            }
+                        }
+                    }
+                    complete.append(mailboxId)
+                    if complete.count == mailboxes.count {
+                        return completionHandler(.newData)
+                    }
+                })
+        })
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        // todo: listen and make alerts here
     }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
-
 }
 

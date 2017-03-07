@@ -1,0 +1,12 @@
+
+/* Class = "UINavigationItem"; title = "Semaphore"; ObjectID = "qbS-b3-k4g"; */
+"qbS-b3-k4g.title" = "Semaphore";
+
+/* Class = "UILabel"; text = "Currently In Mailbox:"; ObjectID = "ljK-vE-hEg"; */
+"ljK-vE-hEg.text" = "Currently In Mailbox:";
+
+/* Class = "UILabel"; text = "Your mailbox is empty"; ObjectID = "VHq-GH-L2J"; */
+"0jP-De-oOK.text" = "Your mailbox is empty";
+
+/* Class = "UILabel"; text = "Past Deliveries"; ObjectID = "wPA-WN-WKB"; */
+"wPA-WN-WKB.text" = "Past Deliveries:";
