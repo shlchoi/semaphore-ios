@@ -13,7 +13,7 @@ See the [main project page](https://shlchoi.github.io/semaphore) for more inform
 ### Other Semaphore Repositories
 * [Mailbox Device](https://github.com/shlchoi/semaphore-mailbox)
 * [Web Server](https://github.com/shlchoi/semaphore-server)
-* [Image Processing Algorithm](https://github.com/mattcwc/semaphore-raspi)
+* [Image Processing Algorithm](https://github.com/mattcwc/semaphore-algorithm)
 * [Android Application](https://github.com/shlchoi/semaphore-android)
 
 
@@ -33,6 +33,6 @@ See the [main project page](https://shlchoi.github.io/semaphore) for more inform
 
 ## License
 
-Distributed under the GNU GPLv3 license. See [LICENSE](https://github.com/shlchoi/semaphore-android/blob/master/LICENSE) for more information.
+Distributed under the GNU GPLv3 license. See [LICENSE](https://github.com/shlchoi/semaphore-ios/blob/master/LICENSE) for more information.
 
 Libraries are used under Google's [Google API Terms of Service](https://developers.google.com/terms/) and the [MIT License](https://opensource.org/licenses/MIT).
