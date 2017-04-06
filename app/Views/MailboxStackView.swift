@@ -1,11 +1,13 @@
 //
-//  MailboxView.swift
-//  Semaphore
+//  Semaphore - iOS
+//  iOS application accompanying Semaphore
+//  See https://shlchoi.github.io/semaphore/ for more information about Semaphore
 //
-//  Created by Samson on 2017-03-03.
-//  Copyright © 2017 Samson. All rights reserved.
+//  MailboxStackView.swift
+//  Copyright © 2017 Samson H. Choi
 //
-
+//  See https://github.com/shlchoi/semaphore-ios/blob/master/LICENSE for license information
+//
 import UIKit
 
 class MailboxStackView: UIStackView {

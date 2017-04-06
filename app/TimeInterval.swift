@@ -1,9 +1,12 @@
 //
-//  TimeInterval.swift
-//  Semaphore
+//  Semaphore - iOS
+//  iOS application accompanying Semaphore
+//  See https://shlchoi.github.io/semaphore/ for more information about Semaphore
 //
-//  Created by Samson on 2017-02-19.
-//  Copyright © 2017 Samson. All rights reserved.
+//  TimeInterval.swift
+//  Copyright © 2017 Samson H. Choi
+//
+//  See https://github.com/shlchoi/semaphore-ios/blob/master/LICENSE for license information
 //
 
 import Foundation
